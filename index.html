@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Govind Singh - BTech Computer Science Engineering Portfolio">
+    <title>Govind Singh | BTech CSE Portfolio</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'inter': ['Inter', 'sans-serif'],
+                        'poppins': ['Poppins', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#6366f1',
+                        'secondary': '#8b5cf6',
+                        'accent': '#ec4899',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-inter bg-gray-50">
+
+    <!-- Navigation -->
+    <nav class="fixed top-0 w-full bg-white/90 backdrop-blur-md shadow-sm z-50 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0">
+                    <a href="#home" class="text-2xl font-bold font-poppins bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        GS
+                    </a>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">About</a>
+                    <a href="#services" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Services</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-gray-700 hover:text-primary focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-200">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#home" class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">About</a>
+                <a href="#services" class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Services</a>
+                <a href="#contact" class="block text-gray-700 hover:text-primary transition-colors duration-300 font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="min-h-screen flex items-center justify-center pt-16 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <div class="text-center">
+                <!-- Animated Avatar -->
+                <div class="mb-8 inline-block">
+                    <div class="w-40 h-40 rounded-full bg-gradient-to-r from-primary via-secondary to-accent p-1 animate-float">
+                        <div class="w-full h-full rounded-full bg-white flex items-center justify-center">
+                            <i class="fas fa-user-graduate text-6xl text-primary"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Text -->
+                <h1 class="text-5xl sm:text-6xl lg:text-7xl font-bold font-poppins mb-4 animate-fadeInUp">
+                    <span class="text-gray-900">Hi, I'm</span>
+                    <span class="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+                        Govind Singh
+                    </span>
+                </h1>
+                
+                <p class="text-2xl sm:text-3xl text-gray-700 font-semibold mb-4 animate-fadeInUp animation-delay-200">
+                    BTech Computer Science Engineering
+                </p>
+                
+                <p class="text-lg sm:text-xl text-gray-600 max-w-2xl mx-auto mb-8 animate-fadeInUp animation-delay-400">
+                    Passionate about building innovative solutions and transforming ideas into reality through code
+                </p>
+                
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fadeInUp animation-delay-600">
+                    <a href="#contact" class="btn-primary px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-full font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center gap-2">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#services" class="px-8 py-4 border-2 border-primary text-primary rounded-full font-semibold hover:bg-primary hover:text-white transition-all duration-300 flex items-center gap-2">
+                        <span>View Services</span>
+                        <i class="fas fa-briefcase"></i>
+                    </a>
+                </div>
+                
+                <!-- Social Links -->
+                <div class="mt-12 flex justify-center gap-6 animate-fadeInUp animation-delay-800">
+                    <a href="https://www.linkedin.com/in/govind-singh-5b6473296" class="social-icon w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white hover:bg-primary transition-all duration-300 transform hover:scale-110">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="https://github.com/Govind1002" class="social-icon w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white hover:bg-secondary transition-all duration-300 transform hover:scale-110">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" class="social-icon w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white hover:bg-accent transition-all duration-300 transform hover:scale-110">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="social-icon w-12 h-12 rounded-full bg-white shadow-md flex items-center justify-center text-gray-700 hover:text-white hover:bg-blue-600 transition-all duration-300 transform hover:scale-110">
+                        <i class="fas fa-envelope text-xl"></i>
+                    </a>
+                </div>
+                
+                <!-- Scroll Down Indicator -->
+                <div class="mt-16 animate-bounce">
+                    <a href="#about" class="text-gray-400 hover:text-primary transition-colors duration-300">
+                        <i class="fas fa-chevron-down text-3xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl sm:text-5xl font-bold font-poppins text-gray-900 mb-4">
+                    About <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Me</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full"></div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- About Content -->
+                <div class="space-y-6">
+                    <h3 class="text-3xl font-bold text-gray-900 font-poppins">
+                        Passionate Computer Science Engineer
+                    </h3>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        I'm Govind Singh, a dedicated BTech Computer Science Engineering student with a passion for creating innovative technological solutions. My journey in computer science has been driven by curiosity and a constant desire to learn and grow.
+                    </p>
+                    <p class="text-gray-600 text-lg leading-relaxed">
+                        With a strong foundation in programming, algorithms, and software development, I strive to build applications that make a positive impact. I believe in continuous learning and staying updated with the latest technologies and industry trends.
+                    </p>
+                    
+                    <!-- Education -->
+                    <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl">
+                        <h4 class="text-xl font-semibold text-gray-900 mb-3 flex items-center gap-2">
+                            <i class="fas fa-graduation-cap text-primary"></i>
+                            Education
+                        </h4>
+                        <p class="text-gray-700 font-medium">Bachelor of Technology (BTech)</p>
+                        <p class="text-gray-600">Computer Science Engineering</p>
+                    </div>
+                </div>
+                
+                <!-- Skills Grid -->
+                <div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-6 font-poppins">Technical Skills</h3>
+                    <div class="grid grid-cols-2 gap-4">
+                        <!-- Skill Card -->
+                        <div class="skill-card bg-white border-2 border-gray-100 p-6 rounded-xl hover:border-primary transition-all duration-300 hover:shadow-lg">
+                            <div class="text-4xl mb-3">
+                                <i class="fas fa-code text-primary"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Programming</h4>
+                            <p class="text-sm text-gray-600">C++, Java, Python, JavaScript</p>
+                        </div>
+                        
+                        <div class="skill-card bg-white border-2 border-gray-100 p-6 rounded-xl hover:border-secondary transition-all duration-300 hover:shadow-lg">
+                            <div class="text-4xl mb-3">
+                                <i class="fas fa-globe text-secondary"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Web Development</h4>
+                            <p class="text-sm text-gray-600">HTML, CSS, React, Node.js</p>
+                        </div>
+                        
+                        <div class="skill-card bg-white border-2 border-gray-100 p-6 rounded-xl hover:border-accent transition-all duration-300 hover:shadow-lg">
+                            <div class="text-4xl mb-3">
+                                <i class="fas fa-database text-accent"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Database</h4>
+                            <p class="text-sm text-gray-600">MySQL, MongoDB, PostgreSQL</p>
+                        </div>
+                        
+                        <div class="skill-card bg-white border-2 border-gray-100 p-6 rounded-xl hover:border-green-500 transition-all duration-300 hover:shadow-lg">
+                            <div class="text-4xl mb-3">
+                                <i class="fas fa-brain text-green-500"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Data Science</h4>
+                            <p class="text-sm text-gray-600">ML, AI, Data Analysis</p>
+                        </div>
+                        
+                        <div class="skill-card bg-white border-2 border-gray-100 p-6 rounded-xl hover:border-orange-500 transition-all duration-300 hover:shadow-lg">
+                            <div class="text-4xl mb-3">
+                                <i class="fab fa-git-alt text-orange-500"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Version Control</h4>
+                            <p class="text-sm text-gray-600">Git, GitHub, GitLab</p>
+                        </div>
+                        
+                        <div class="skill-card bg-white border-2 border-gray-100 p-6 rounded-xl hover:border-blue-500 transition-all duration-300 hover:shadow-lg">
+                            <div class="text-4xl mb-3">
+                                <i class="fas fa-cogs text-blue-500"></i>
+                            </div>
+                            <h4 class="font-semibold text-gray-900 mb-2">Problem Solving</h4>
+                            <p class="text-sm text-gray-600">DSA, Algorithms, Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gradient-to-br from-gray-50 via-blue-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl sm:text-5xl font-bold font-poppins text-gray-900 mb-4">
+                    My <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Services</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Comprehensive technical services to bring your ideas to life
+                </p>
+            </div>
+            
+            <!-- Services Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-primary">
+                    <div class="w-16 h-16 bg-gradient-to-br from-primary to-blue-400 rounded-xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                        <i class="fas fa-laptop-code text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-poppins">Web Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Creating responsive, modern websites and web applications using the latest technologies and best practices.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Frontend Development</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Backend Development</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-primary"></i>
+                            <span>Full-Stack Solutions</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 2 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-secondary">
+                    <div class="w-16 h-16 bg-gradient-to-br from-secondary to-purple-400 rounded-xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                        <i class="fas fa-mobile-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-poppins">Software Development</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Building robust desktop and mobile applications tailored to your specific requirements and goals.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span>Desktop Applications</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span>Mobile Apps</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-secondary"></i>
+                            <span>Cross-Platform Solutions</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 3 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-accent">
+                    <div class="w-16 h-16 bg-gradient-to-br from-accent to-pink-400 rounded-xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                        <i class="fas fa-chart-line text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-poppins">Data Analysis</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Extracting meaningful insights from data using advanced analytics and visualization techniques.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Data Visualization</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Statistical Analysis</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-accent"></i>
+                            <span>Predictive Modeling</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 4 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-green-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-400 rounded-xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                        <i class="fas fa-robot text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-poppins">Machine Learning</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Developing intelligent systems that learn from data and make predictions or decisions.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>ML Model Development</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>AI Integration</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-green-500"></i>
+                            <span>Deep Learning</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 5 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-orange-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-400 rounded-xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                        <i class="fas fa-database text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-poppins">Database Design</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Designing and optimizing database architectures for efficient data storage and retrieval.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Database Architecture</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Query Optimization</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-orange-500"></i>
+                            <span>Data Migration</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Service Card 6 -->
+                <div class="service-card bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border-t-4 border-blue-500">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-400 rounded-xl flex items-center justify-center mb-6 transform transition-transform duration-300 hover:rotate-6">
+                        <i class="fas fa-shield-alt text-2xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-poppins">Technical Consulting</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Providing expert advice on technology stack selection, architecture, and best practices.
+                    </p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Tech Stack Selection</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Code Review</span>
+                        </li>
+                        <li class="flex items-center gap-2">
+                            <i class="fas fa-check-circle text-blue-500"></i>
+                            <span>Performance Optimization</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="section-title text-4xl sm:text-5xl font-bold font-poppins text-gray-900 mb-4">
+                    Get In <span class="bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Touch</span>
+                </h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto rounded-full mb-4"></div>
+                <p class="text-gray-600 text-lg max-w-2xl mx-auto">
+                    Let's discuss your project and bring your ideas to life
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-start">
+                <!-- Contact Info -->
+                <div class="space-y-8">
+                    <div>
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 font-poppins">Let's Connect</h3>
+                        <p class="text-gray-600 text-lg leading-relaxed mb-8">
+                            I'm always interested in hearing about new projects and opportunities. Whether you have a question or just want to say hi, feel free to reach out!
+                        </p>
+                    </div>
+                    
+                    <!-- Contact Cards -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl hover:shadow-md transition-all duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Email</h4>
+                                <a href="mailto:govind.singh@example.com" class="text-primary hover:text-secondary transition-colors duration-300">
+                                    govindsingh25864@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl hover:shadow-md transition-all duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-secondary to-accent rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Phone</h4>
+                                <a href="tel:+919876543210" class="text-primary hover:text-secondary transition-colors duration-300">
+                                    +91 8299068146
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start gap-4 p-6 bg-gradient-to-r from-blue-50 to-purple-50 rounded-xl hover:shadow-md transition-all duration-300">
+                            <div class="w-12 h-12 bg-gradient-to-br from-accent to-pink-400 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900 mb-1">Location</h4>
+                                <p class="text-gray-600">India</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div>
+                        <h4 class="font-semibold text-gray-900 mb-4">Follow Me</h4>
+                        <div class="flex gap-4">
+                            <a href="https://www.linkedin.com/in/govind-singh-5b6473296" class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 flex items-center justify-center text-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-linkedin-in text-xl"></i>
+                            </a>
+                            <a href="https://github.com/Govind1002" class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 flex items-center justify-center text-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-github text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 flex items-center justify-center text-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-twitter text-xl"></i>
+                            </a>
+                            <a href="#" class="w-12 h-12 rounded-full bg-gradient-to-r from-blue-50 to-purple-50 flex items-center justify-center text-primary hover:bg-gradient-to-r hover:from-primary hover:to-secondary hover:text-white transition-all duration-300 transform hover:scale-110">
+                                <i class="fab fa-instagram text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="bg-gradient-to-br from-gray-50 to-blue-50 rounded-2xl p-8 shadow-lg">
+                    <form id="contact-form" class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Name *</label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
+                                placeholder="Your Name"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email *</label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
+                                placeholder="your.email@example.com"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-gray-700 font-medium mb-2">Subject *</label>
+                            <input 
+                                type="text" 
+                                id="subject" 
+                                name="subject" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300"
+                                placeholder="Project Discussion"
+                            >
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Message *</label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="5" 
+                                required
+                                class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-primary focus:ring-2 focus:ring-primary/20 outline-none transition-all duration-300 resize-none"
+                                placeholder="Tell me about your project..."
+                            ></textarea>
+                        </div>
+                        
+                        <button 
+                            type="submit"
+                            class="w-full px-8 py-4 bg-gradient-to-r from-primary to-secondary text-white rounded-lg font-semibold hover:shadow-xl transform hover:scale-105 transition-all duration-300 flex items-center justify-center gap-2"
+                        >
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                    
+                    <!-- Success Message -->
+                    <div id="success-message" class="hidden mt-6 p-4 bg-green-100 border border-green-400 text-green-700 rounded-lg">
+                        <i class="fas fa-check-circle mr-2"></i>
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-2xl font-bold font-poppins mb-4 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+                        Govind Singh
+                    </h3>
+                    <p class="text-gray-400 leading-relaxed">
+                        BTech Computer Science Engineering student passionate about creating innovative solutions and building the future through technology.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-primary transition-colors duration-300">Home</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-primary transition-colors duration-300">About</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-primary transition-colors duration-300">Services</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-primary transition-colors duration-300">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Connect -->
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Connect</h4>
+                    <div class="flex gap-4 mb-4">
+                        <a href="https://www.linkedin.com/in/govind-singh-5b6473296" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-all duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Govind1002" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-secondary transition-all duration-300">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-accent transition-all duration-300">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    </div>
+                    <p class="text-gray-400 text-sm">
+                        <i class="fas fa-envelope mr-2"></i>
+                        govindsingh25864@gmail.com
+                    </p>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2025 Govind Singh. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
